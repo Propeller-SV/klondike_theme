@@ -12,7 +12,7 @@ function addThisPage() {
 		'post_status'	=> 'publish',
 		'post_type'		=> 'page',
 		'post_content'	=> 'Some default content',
-		'menu_order'	=> 1
+		'menu_order'	=> 5
 		);
 	$page_services_exists = get_page_by_title( $page_services['post_title'] );
 
@@ -43,7 +43,7 @@ function addThisPage() {
 			'post_type'		=> 'page',
 			'post_excerpt'	=> $excerpts[$i],
 			'post_content'	=> 'Suspendisse in orci enim. This is Photoshop\'s version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo. Nullam ac urna eu felis dapibus condimentum sit amet a augue. Sed non neque elit. Sed ut imperdiet nisi. Proin condimentum fermentum nunc. Etiam pharetra, erat sed fermentum feugiat, velit mauris egestas quam, ut aliquam massa nisl quis neque. Suspendisse in orci enim.',
-			'menu_order'	=> ($i+2)
+			'menu_order'	=> ($i+1)
 			);
 		$page_exists = get_page_by_title( $new_page['post_title'] );
 
@@ -88,7 +88,7 @@ function addThisPage() {
 		'post_status'	=> 'publish',
 		'post_type'		=> 'page',
 		'post_content'	=> 'Suspendisse in orci enim. This is Photoshop\'s version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo. Nullam ac urna eu felis dapibus condimentum sit amet a augue. Sed non neque elit. Sed ut imperdiet nisi. Proin condimentum fermentum nunc. Etiam pharetra, erat sed fermentum feugiat, velit mauris egestas quam, ut aliquam massa nisl quis neque. Suspendisse in orci enim.',
-		'menu_order'	=> 5
+		'menu_order'	=> 4
 		);
 	$page_contact_exists = get_page_by_title( $page_contact['post_title'] );
 

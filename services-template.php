@@ -68,9 +68,6 @@
 			<div class="col-xs-12">
 				<?php $currentlang = substr(get_bloginfo('language'), 0, 2); ?>
 				<?php $loop = new WP_Query(array('post_type' => 'page', 'lang' => $currentlang, 'posts_per_page' => 3, 'orderby' => 'menu_order', 'order'=>'ASC')); ?>
-				<pre><?php
-				// die(print_r($loop));
-				?></pre>
 				<?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
 				<div class="col-xs-12 col-sm-4">
 					<div class="foto">
