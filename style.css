@@ -1,0 +1,386 @@
+/*
+Theme name: IT Klondike
+Theme URI: http://www.example.com
+Author: Serhii Prokhorenko
+Author URI: http://www.example.com
+Description: Simple theme
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags:
+Text domain: klondike
+*/
+
+html {
+	position: relative;
+	min-height: 100%;
+}
+body {
+	/* Margin bottom by footer height */
+	margin-bottom: 190px;
+}
+
+/*
+*=======================================================================================================
+* GENERAL STYLES
+*=======================================================================================================
+*/
+
+* {
+	padding: 0;
+	margin: 0;
+}
+a:focus {
+	outline: none !important;
+}
+.custom-active {
+	color: #ffb305 !important;
+}
+.cover {
+	background: url('img/background-top.png') 100% 100% no-repeat;
+	background-size: cover;
+	display:block;
+	width: 100%;
+}
+
+/*
+*=======================================================================================================
+* HEADER
+*=======================================================================================================
+*/
+
+/* --- brand ---*/
+
+header .brand a {
+	text-decoration: none;
+	font-size: 30px;
+	color: #fff;
+}
+
+/* ---navbar-header-list ---*/
+
+.navbar-header-list {
+	margin-top: 5px;
+}
+.navbar-header-list li {
+	list-style: none;
+}
+
+/* --- navbar-header-custom ---*/
+
+.navbar-header-custom li a {
+	color: #fff;
+	text-transform: uppercase;
+}
+.navbar-header-custom li a:hover,
+.navbar-header-custom li a:focus {
+	color: #ffb305;
+}
+.navbar-header-custom .list-in li {
+   display: inline;
+   padding-left: 20px;
+}
+.navbar-header-custom .list-in li a:focus,
+.navbar-header-custom .list-in li a:hover {
+	color: #222;
+}
+#navbar li.current-menu-item a{             /*psv edition*/
+	color: #ffb305;
+}
+
+/*
+*=======================================================================================================
+* SLIDER(klondike-page)
+*=======================================================================================================
+*/
+
+/* --- slider ---*/
+
+.slider {
+	background-color: #2f333a;
+	padding-top: 57px;
+	margin-top: 50px;
+}
+
+/* --- carousel-slides ---*/
+
+#carousel-slides {
+	border-top: 8px solid #2f333a;
+	border-bottom: 8px solid #ffb305;
+}
+#carousel-slides img {
+	margin: 0 auto;
+}
+
+/* --- carousel-caption ---*/
+
+.carousel-caption h5 {
+	text-transform: uppercase;
+}
+.carousel-caption h5:hover {
+	opacity: 0.0;
+}
+
+/* --- carousel-indicators ---*/
+
+.slider .carousel-indicators li {
+	background-color: #fff;
+}
+.slider .carousel-indicators .active {
+	font-size: 18px;
+	background-color: #6a6d71;
+	border: 1px solid #6a6d71;
+}
+
+/*
+*=======================================================================================================
+* CONTENT(klondike-page)
+*=======================================================================================================
+*/
+
+/* --- content-klondike ---*/
+
+.content-klondike .row {
+	padding: 90px 0;
+}
+
+/* --- foto ---*/
+
+.foto p {
+	background-color: #343840;
+	border-bottom: 8px solid #757970;
+	padding: 35px 0;
+}
+.foto p:hover {
+	color: #fff;
+	border-bottom: 8px solid #fff;
+}
+.foto p a:hover,
+.foto p a:focus {
+	color: #fff;
+}
+.foto p a {
+	font-size: 16px;
+	text-decoration: none;
+	color: #757970;
+	text-transform: uppercase;
+}
+.foto img {
+	display: block;
+	width: 100%;
+}
+
+/*
+*=======================================================================================================
+* BRAND-FOTO(opportunities-page, businesses-page, professionals-page, brand-page)
+*=======================================================================================================
+*/
+
+.brand-foto {
+	background-color: #2f333a;
+	padding-top: 57px;
+	margin-top: 50px;
+}
+.brand-contacts,
+.brand-professionals,
+.brand-businesses,
+.brand-opportunities {
+	border-top: 8px solid #2f333a;
+	border-bottom: 8px solid #ffb305;
+}
+.brand-contacts img,
+.brand-professionals img,
+.brand-businesses img,
+.brand-opportunities img {
+	display: block;
+	width: 100%;
+}
+
+/*
+*=======================================================================================================
+* CONTENT-OPPORTUNITIES(opportunities-page)
+*=======================================================================================================
+*/
+
+/* --- content-opportunities ---*/
+
+.content-opportunities {
+	padding: 50px 0;
+}
+
+.opportunities-list {
+	padding: 30px 0;
+}
+.div-foto {
+	width: 165px;
+	display: block;
+	padding: 30px 0;
+}
+.opportunities-list li {
+	display: inline-block;
+}
+
+.div-foto h5 {
+	font-size: 16px;
+	color: #fff;
+}
+.div-foto p a {
+	text-decoration: none;
+	color: #757981;
+}
+.div-foto p a:hover,
+.div-foto p a:focus {
+	color: #ffb305;
+}
+
+/*
+*=======================================================================================================
+* CONTENT(businesses-page, professionals-page, brand-page)
+*=======================================================================================================
+*/
+
+.content-contacts,
+.content-professionals,
+.content-businesses {
+	padding: 55px 0;
+}
+.contacts-text p,
+.professionals-text p,
+.businesses-text p {
+	display: block;
+	color: #6a6d71;
+}
+
+/*
+*=======================================================================================================
+* FOOTER
+*=======================================================================================================
+*/
+
+/* --- footer ---*/
+
+footer {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	/* Set the fixed height of the footer here */
+	height: 190px;
+	background-color: #242930;
+}
+footer .brand a {
+	text-decoration: none;
+	font-size: 30px;
+	color: #fff;
+}
+footer .brand {
+	padding-top: 60px;
+}
+footer p {
+	color: #6a6d71;
+}
+
+/*
+*=======================================================================================================
+* MEDIA
+*=======================================================================================================
+*/
+
+/* Medium Devices, Desktops */
+
+@media (min-width: 992px) {
+
+	header .brand {
+	margin-top: 23px;
+	}
+	.navbar-header-list {
+	margin-top: 70px;
+	}
+	.navbar-main {
+	display: table;
+	margin: 0px auto;
+	}
+	.navbar-main li {
+	display: table-cell;
+	}
+	.navbar-header-custom li a {
+	font-size: 16px;
+	margin-top: 65px;
+	}
+	.slider,
+	.brand-foto {
+	margin-top: 117px;
+	padding-top: 15px;
+	}
+	#navbar li.current-menu-item a{             /*psv edition*/
+	border-bottom: 8px solid #ffb305;
+	}
+}
+
+/* Small Devices, Tablets */
+
+@media (min-width: 768px) {
+
+	body {
+	/* Margin bottom by footer height */
+	margin-bottom: 190px;
+	}
+	.navbar-fixed-top {
+	position: absolute;
+	}
+	.navbar-header-custom li a {
+	border-bottom: 8px solid #2f333a;
+	padding-bottom: 25px;
+	}
+	.navbar-main {
+	display: table;
+	margin: 0px auto;
+	}
+	.navbar-main li {
+	display: table-cell;
+	}
+	.navbar-header-custom .dropdown a:hover,
+	.navbar-header-custom .dropdown a:focus,
+	.navbar-header-custom .dropdown a {
+	border-bottom: none;
+	padding-bottom: 0;
+	margin-top: 0;
+	}
+	.navbar-header-custom li .custom-active {
+	border-bottom: 8px solid #ffb305;
+	}
+	.navbar-header-custom li a:hover,
+	.navbar-header-custom li a:focus {
+	background-color: #222;
+	border-bottom: 8px solid #ffb305;
+	}
+	.navbar-header-custom .dropdown-menu {
+	min-width: 60px;
+	}
+	.navbar-header-custom .dropdown-menu li a {
+	color: #000;
+	background-color: #fff !important;
+	border-bottom: none;
+	}
+	.navbar-header-custom .dropdown-menu li a:hover {
+	color: #ffb305;
+	}
+	.dropdown-toggle {
+	position: relative;
+	}
+	.dropdown i {
+	position: absolute;
+	top: 25px;
+	left: 13px;
+	color: #fff;
+	}
+	.carousel-caption h5 {
+	font-size: 60px;
+	}
+	footer {
+	/* Set the fixed height of the footer here */
+	height: 190px;
+	}
+	#navbar li.current-menu-item a{             /*psv edition*/
+	border-bottom: 8px solid #ffb305;
+	}
+}
