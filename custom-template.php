@@ -6,12 +6,13 @@
 
 <?php get_header(); ?>
 
-<section class="brand-foto">
+<section class="item">
 	<div class="container">
 		<div class="row">
-			<div class="col-xs-12 brand-businesses">
-				<div class="item">
-					<img class="img-responsive" src="<?php echo IMAGES; ?>/brand-foto.png" alt="...">
+			<div class="col-xs-12">
+				<div class="brand-businesses">
+					<?php $brand = get_post_meta( get_the_id(), 'brand_photo_attachment', true ); ?>
+					<img class="img-responsive" src="<?php if ($brand) echo $brand; else echo IMAGES . '/brand-foto.png'; ?>" alt="...">
 					<div class="carousel-caption">
 						<h5 class="text-cenetr"><?php the_title(); ?></h5>
 					</div>
@@ -21,7 +22,7 @@
 	</div>
 </section>
 
-<section class="content-businesses cover">
+<section class="content-businesses">
 	<div class="container">
 		<div class="row">
 			<div class="col-xs-12 businesses-text">
