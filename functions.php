@@ -22,23 +22,22 @@ require_once(THEMEFUNC . '/default_pages.php');
  * Include the Plugin Activation function.
  * ----------------------------------------------------------------------------------------
  */
-require_once THEMEFUNC . '/mu-plugins.php';
+require_once THEMEFUNC . '/mu_plugins.php';
 
 /**
  * ----------------------------------------------------------------------------------------
  * Include the function to add languges to Polylang plugin.
  * ----------------------------------------------------------------------------------------
  */
-require_once THEMEFUNC . '/add-languages-polylang.php';
+require_once THEMEFUNC . '/add_languages_polylang.php';
 
 /**
  * ----------------------------------------------------------------------------------------
  * Include the functions for metaboxes.
  * ----------------------------------------------------------------------------------------
  */
-require_once THEMEFUNC . '/attach-files.php';
-// require_once THEMEFUNC . '/attach-files-test.php';
-// require_once THEMEFUNC . '/attach-files-test-fractal.php';
+require_once THEMEFUNC . '/attach_files_metabox.php';
+require_once THEMEFUNC . '/brand_photo_metabox.php';
 
 /**
  * ----------------------------------------------------------------------------------------
@@ -82,14 +81,6 @@ if (!function_exists('current_theme_resources')) :
 	}
 endif;	/* /current_theme_resources */
 add_action( 'wp_enqueue_scripts', 'current_theme_resources' );
-
-// function add_custom_attachment_script() {
-
-//     wp_register_script('custom-attachment-script', get_stylesheet_directory_uri() . '/js/custom_attachment.js');
-//     wp_enqueue_script('custom-attachment-script');
-
-// } // end add_custom_attachment_script
-// add_action('admin_enqueue_scripts', 'add_custom_attachment_script');
 
 /**
  * ----------------------------------------------------------------------------------------
