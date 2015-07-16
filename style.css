@@ -90,22 +90,17 @@ header .brand a {
 
 /*
 *=======================================================================================================
-* SLIDER(klondike-page)
+* CAROUSEL-SLIDES(klondike-page)
 *=======================================================================================================
 */
-
-/* --- slider ---*/
-
-.slider {
-	background-color: #2f333a;
-	padding-top: 57px;
-	margin-top: 50px;
-}
 
 /* --- carousel-slides ---*/
 
 #carousel-slides {
-	border-top: 8px solid #2f333a;
+	background-color: #2f333a;
+	padding-top: 2px;
+}
+#carousel-slides .carousel-slides-row {
 	border-bottom: 8px solid #ffb305;
 }
 #carousel-slides img {
@@ -116,9 +111,6 @@ header .brand a {
 
 .carousel-caption h5 {
 	text-transform: uppercase;
-}
-.carousel-caption h5:hover {
-	opacity: 0.0;
 }
 
 /* --- carousel-indicators ---*/
@@ -176,9 +168,8 @@ header .brand a {
 *=======================================================================================================
 */
 
-.brand-foto {
+.item {
 	background-color: #2f333a;
-	padding-top: 57px;
 	margin-top: 50px;
 }
 .brand-contacts,
@@ -207,7 +198,6 @@ header .brand a {
 .content-opportunities {
 	padding: 50px 0;
 }
-
 .opportunities-list {
 	padding: 30px 0;
 }
@@ -219,7 +209,6 @@ header .brand a {
 .opportunities-list li {
 	display: inline-block;
 }
-
 .div-foto h5 {
 	font-size: 16px;
 	color: #fff;
@@ -295,21 +284,9 @@ footer p {
 	.navbar-header-list {
 	margin-top: 70px;
 	}
-	.navbar-main {
-	display: table;
-	margin: 0px auto;
-	}
-	.navbar-main li {
-	display: table-cell;
-	}
 	.navbar-header-custom li a {
 	font-size: 16px;
 	margin-top: 65px;
-	}
-	.slider,
-	.brand-foto {
-	margin-top: 117px;
-	padding-top: 15px;
 	}
 	#navbar li.current-menu-item a{             /*psv edition*/
 	border-bottom: 8px solid #ffb305;
@@ -356,6 +333,9 @@ footer p {
 	.navbar-header-custom .dropdown-menu {
 	min-width: 60px;
 	}
+	.navbar-header-custom .dropdown-menu li {
+	padding: 5px 0;
+	}
 	.navbar-header-custom .dropdown-menu li a {
 	color: #000;
 	background-color: #fff !important;
@@ -372,6 +352,13 @@ footer p {
 	top: 25px;
 	left: 13px;
 	color: #fff;
+	}
+	#carousel-slides {
+	padding-top: 8px;
+	}
+	.item {
+	padding-top: 10px;
+	margin-top: 114px;
 	}
 	.carousel-caption h5 {
 	font-size: 60px;
