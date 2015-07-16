@@ -28,7 +28,7 @@
 <?php wp_head(); ?>
 
 </head>
-<body <?php body_class(); ?>>
+<body class="cover" <?php body_class(); ?>>
 
 <header>
 	<div class="navbar navbar-inverse navbar-header-custom navbar-fixed-top cover" role="navigation">
@@ -74,7 +74,7 @@
 											<?php for ($i=0; $i<count($switcher); $i++) { ?>
 											<li>
 												<a href="<?php echo $switcher[$i]['url']; ?>"<?php if (in_array('current-lang', $lang[$i])) echo('class="custom-active"'); ?>>
-													<img src="<?php echo $switcher[$i]['flag']; ?>" /><?php echo $switcher[$i]['slug']; ?>
+													<img src="<?php echo $switcher[$i]['flag']; ?>" /><?php echo ' ' . $switcher[$i]['slug']; ?>
 												</a>
 											</li>
 											<?php } ?>
