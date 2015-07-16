@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: it_klondike\n"
-"POT-Creation-Date: 2015-07-10 19:08+0200\n"
-"PO-Revision-Date: 2015-07-10 19:08+0200\n"
+"POT-Creation-Date: 2015-07-15 15:11+0200\n"
+"PO-Revision-Date: 2015-07-15 15:12+0200\n"
 "Last-Translator: \n"
 "Language-Team: fractal\n"
 "Language: pt_PT\n"
@@ -15,37 +15,58 @@ msgstr ""
 "X-Poedit-KeywordsList: __;_e;esc_attr_e\n"
 "X-Poedit-SearchPath-0: .\n"
 
-#: admin/func/attach-files.php:16
+#: admin/func/attach_files_metabox.php:16
 msgid "Custom Attachments"
 msgstr "Acessórios personalizados"
 
-#: admin/func/attach-files.php:34
+#: admin/func/attach_files_metabox.php:34
 msgid "Upload your files here"
 msgstr "Envie seus arquivos aqui."
 
-#: admin/func/attach-files.php:43
+#: admin/func/attach_files_metabox.php:43
 msgid "Remove file"
 msgstr "Remover arquivo"
 
-#: admin/func/attach-files.php:44
+#: admin/func/attach_files_metabox.php:44
 msgid "Select screenshot"
 msgstr "Selecione a captura de tela"
 
-#: admin/func/attach-files.php:45
+#: admin/func/attach_files_metabox.php:45
 msgid "Add screenshot"
 msgstr "Adicionar screenshot"
 
-#: admin/func/attach-files.php:144
+#: admin/func/attach_files_metabox.php:144
 msgid "There was an error uploading your file. The error is: "
 msgstr "Houve um erro ao enviar o arquivo. O erro é:"
 
-#: admin/func/attach-files.php:151
+#: admin/func/attach_files_metabox.php:151
 msgid "The file type that you've uploaded is not a PDF, doc, xls or ppt"
 msgstr "Não é o tipo de arquivo que você carregou um PDF, doc, xls ou ppt"
 
-#: admin/func/attach-files.php:171 admin/func/attach-files.php:191
+#: admin/func/attach_files_metabox.php:171
+#: admin/func/attach_files_metabox.php:191
 msgid "There was an error trying to delete your file."
 msgstr "Houve um erro ao tentar excluir o arquivo."
+
+#: admin/func/brand_photo_metabox.php:16
+msgid "Brand photo"
+msgstr "Marca foto"
+
+#: admin/func/brand_photo_metabox.php:33
+msgid "Upload your brand photo here"
+msgstr "Carregar sua marca foto aqui"
+
+#: admin/func/brand_photo_metabox.php:34
+msgid "Upload image"
+msgstr "Adicionar Imagem"
+
+#: admin/func/brand_photo_metabox.php:36
+msgid "Image URL"
+msgstr "URL da imagem"
+
+#: admin/func/brand_photo_metabox.php:37
+msgid "Image thumbnail"
+msgstr "Miniatura da imagem"
 
 #: footer.php:15
 msgid "Copyright"
@@ -55,7 +76,7 @@ msgstr "Direito de Autor"
 msgid "Designed by"
 msgstr "Designed by"
 
-#: functions.php:102
+#: functions.php:93
 msgid "Primary Menu"
 msgstr "Menu principal"
 
@@ -67,7 +88,7 @@ msgstr "Pedimos desculpa, mas nenhuma publicação corresponde ao critério da p
 msgid "Download"
 msgstr "Descarregar"
 
-#: services-template.php:82
+#: services-template-saved.php:82
 msgid "Sorry, this page does not exist."
 msgstr "Desculpe, esta página não existe."
 
