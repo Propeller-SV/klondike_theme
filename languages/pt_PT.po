@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: it_klondike\n"
-"POT-Creation-Date: 2015-07-15 15:11+0200\n"
-"PO-Revision-Date: 2015-07-15 15:12+0200\n"
+"POT-Creation-Date: 2015-07-16 21:40+0200\n"
+"PO-Revision-Date: 2015-07-16 21:40+0200\n"
 "Last-Translator: \n"
 "Language-Team: fractal\n"
 "Language: pt_PT\n"
@@ -80,11 +80,15 @@ msgstr "Designed by"
 msgid "Primary Menu"
 msgstr "Menu principal"
 
+#: functions.php:133
+msgid "New Size"
+msgstr "Novo Tamanho"
+
 #: index.php:27
 msgid "Sorry, no posts matched your criteria."
 msgstr "Pedimos desculpa, mas nenhuma publicação corresponde ao critério da pesquisa"
 
-#: opportunities-template.php:44
+#: opportunities-template.php:43
 msgid "Download"
 msgstr "Descarregar"
 
