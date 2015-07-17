@@ -118,3 +118,21 @@ function post_edit_form_tag() {
    echo ' enctype="multipart/form-data"';
 }
 add_action( 'post_edit_form_tag' , 'post_edit_form_tag' );
+
+/**
+ * ----------------------------------------------------------------------------------------
+ * Custom resolution for image uploader
+ * ----------------------------------------------------------------------------------------
+ */
+if ( function_exists( 'add_image_size' ) ) {
+add_image_size( 'new-size', 1086, 330, true ); //(cropped)
+}
+
+function my_image_sizes($sizes) {
+$addsizes = array(
+'new-size' => __( 'New Size', 'klondike')
+);
+$newsizes = array_merge($sizes, $addsizes);
+return $newsizes;
+}
+add_filter('image_size_names_choose', 'my_image_sizes');
