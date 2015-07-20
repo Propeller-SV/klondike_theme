@@ -24,6 +24,13 @@
 <section class="content-opportunities">
 	<div class="container">
 		<div class="row">
+			<div class="col-xs-12 businesses-text">
+				<?php
+				while ( have_posts() ) : the_post();
+					the_content();
+				endwhile;
+				?>
+			</div><!-- end of col-xs-12 -->
 			<div class="col-xs-12 opportunities-row">
 				<ul class="text-center opportunities-list">
 					<?php

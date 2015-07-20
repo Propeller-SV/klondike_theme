@@ -78,6 +78,13 @@
 				<?php endwhile; ?>
 				<?php wp_reset_postdata(); ?>
 			</div><!-- end of col-xs-12 -->
+			<div class="col-xs-12 businesses-text">
+				<?php
+				while ( have_posts() ) : the_post();
+					the_content();
+				endwhile;
+				?>
+			</div><!-- end of col-xs-12 -->
 		</div><!-- end of row -->
 	</div><!-- end of container -->
 </section><!-- end of content -->
