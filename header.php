@@ -5,6 +5,12 @@
  * Displays all of the head element and everything up until the "site-content" div.
  */
 ?>
+
+<?php
+	// Get the favicon.
+	$favicon = IMAGES . '/favicon.ico';
+?>
+
 <!DOCTYPE html>
 <html <?php language_attributes(); ?>>
 <head>
@@ -13,7 +19,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="description" content="<?php bloginfo( 'description' ); ?>">
 	<meta name="author" content="">
-
+	<link rel="shortcut icon" href="<?php echo $favicon; ?>">
 	<title><?php wp_title( '' ); ?></title>
 
 	<!-- Just for debugging purposes. Don't actually copy this line! -->
