@@ -126,11 +126,13 @@ add_action( 'post_edit_form_tag' , 'post_edit_form_tag' );
  */
 if ( function_exists( 'add_image_size' ) ) {
 add_image_size( 'new-size', 1086, 330, true ); //(cropped)
+add_image_size( 'screenshot', 115, 63, true ); //(cropped)
 }
 
 function my_image_sizes($sizes) {
 $addsizes = array(
-'new-size' => __( 'New Size', 'klondike')
+'new-size'		=> __( 'New Size', 'klondike'),
+'screenshot'	=> __( 'Screenshot', 'klondike')
 );
 $newsizes = array_merge($sizes, $addsizes);
 return $newsizes;
