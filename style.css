@@ -212,6 +212,9 @@ header .brand a {
 .div-foto h5 {
 	font-size: 16px;
 	color: #fff;
+	border: 2px solid;
+	padding: 3px;
+	margin: 0 3px;
 }
 .div-foto p a {
 	text-decoration: none;
